@@ -18,7 +18,8 @@ test('daysLeft counts whole days', () => {
 
 test('message wording', () => {
   const r = { title: 'STNK', due: '2026-12-20' };
-  assert.equal(message(r, 30), 'STNK: 30 hari lagi (2026-12-20)');
+  assert.equal(message(r, 30), 'STNK: 30 hari lagi (20/12/2026)');
+  assert.equal(message({ title: 'X', due: '2027-01-05' }, 3), 'X: 3 hari lagi (5/1/2027)');
   assert.equal(message(r, 0), 'STNK: HARI INI!');
   assert.equal(message(r, -3), 'STNK: terlambat 3 hari');
 });

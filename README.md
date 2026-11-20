@@ -1,6 +1,6 @@
 # Pengingat (PWA)
 
-Catat tanggal penting (STNK, pajak, asuransi, dll). Setiap pagi jam 07:00 WIB, Vercel Cron mengirim push notification untuk semua item yang sudah masuk jendela pengingat (mis. H-30), **setiap hari sampai hari H**, dan tetap diingatkan kalau sudah lewat sampai kamu tekan **✓ Selesai**. Item berulang (tiap bulan / tahun / 5 tahun) otomatis pindah ke periode berikutnya saat ditandai selesai.
+Catat tanggal penting (STNK, pajak, asuransi, dll). Setiap pagi jam 07:00 WIB, Vercel Cron mengirim push notification untuk semua item yang sudah masuk jendela pengingat (mis. H-30), **setiap hari sampai hari H**, dan tetap diingatkan kalau sudah lewat sampai jatuh temponya diperbarui. Ketuk item → **✓ Sudah diperpanjang** (geser ke periode berikutnya) atau pilih tanggal baru → **Simpan**.
 
 ## Deploy ke Vercel
 
